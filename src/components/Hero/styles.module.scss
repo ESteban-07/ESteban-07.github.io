@@ -1,0 +1,145 @@
+@import '../../styles/main.scss';
+
+.hero {
+  @include container(column);
+  margin-top: 78px;
+
+  .heroContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+    .heroImage {
+      background-image: url('../../assets/images/profile-pic.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 40%;
+      border: 3px solid $dark;
+      width: 100%;
+      max-width: 350px;
+      height: 350px;
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      -webkit-animation: morph 8s ease-in-out infinite;
+      animation: morph 8s ease-in-out infinite;
+      transition: all 1s ease-in-out;
+    }
+
+    .heroDescription {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h1 {
+        color: $dark;
+        font-size: 55px;
+        line-height: 1.2;
+      }
+
+      img {
+        width: 60px;
+        aspect-ratio: 1;
+      }
+
+      p {
+        color: $silver;
+        font-size: $lg;
+      }
+
+      span {
+        display: flex;
+        width: 100%;
+        gap: 8px;
+        align-items: center;
+
+        a {
+          font-size: 30px;
+          color: $dark;
+        }
+      }
+    }
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    margin-top: 30px;
+
+    p {
+      color: $dark;
+      font-weight: 600;
+      padding-right: 12px;
+      font-size: $lg;
+      border-right: 2px solid $silver;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: $light-shadow;
+        width: 55px;
+        height: 55px;
+
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    .heroContent {
+      gap: 50px;
+      align-items: center;
+      flex-direction: column-reverse;
+
+      .heroDescription {
+        text-align: center;
+
+        h1 {
+          font-size: 40px;
+          line-height: 1;
+
+          img {
+            width: 40px;
+          }
+        }
+
+        span {
+          justify-content: center;
+        }
+      }
+    }
+
+    .skills {
+      flex-direction: column;
+      gap: 32px;
+
+      ul {
+        justify-content: center;
+      }
+
+      p {
+        text-align: center;
+        padding: 0;
+        border-right: none;
+        border-bottom: 2px solid $silver;
+      }
+    }
+  }
+}

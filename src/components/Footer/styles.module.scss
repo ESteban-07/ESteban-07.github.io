@@ -1,0 +1,42 @@
+@import '../../styles/main.scss';
+.footer {
+  background-color: $dark;
+
+  div {
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 17px;
+      color: white;
+    }
+
+    span {
+      display: flex;
+      gap: 18px;
+
+      i {
+        font-size: 24px;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .footer {
+    div {
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import '../../styles/main.scss';
+.contactSection {
+  width: 100%;
+  background-color: white;
+
+  .contactWrapper {
+    width: 100%;
+    max-width: 1070px;
+    min-height: 50vh;
+    margin: 0 auto;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+
+    .contactContent {
+      width: 100%;
+      display: flex;
+      gap: 80px;
+      margin-top: 60px;
+
+      .contactInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: $ghost-white;
+          box-shadow: $light-shadow;
+          padding: 24px;
+
+          i {
+            color: $blue;
+            font-size: 30px;
+          }
+        }
+
+        .details {
+          h3 {
+            font-size: $lg;
+            margin-bottom: 4px;
+          }
+
+          p,
+          a {
+            color: #767676;
+            cursor: pointer;
+            font-size: 17px;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .contactWrapper {
+    justify-content: center;
+    align-items: center;
+
+    .contactContent {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+
+      .contactInfo {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
