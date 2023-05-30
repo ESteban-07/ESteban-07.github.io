@@ -136,10 +136,11 @@
       }
 
       .card {
+        gap: 40px;
         flex-direction: column;
 
         .cardContent {
-          gap: 18px;
+          gap: 20px;
           width: 100%;
         }
       }
