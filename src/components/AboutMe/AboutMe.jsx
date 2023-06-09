@@ -18,12 +18,14 @@ function AboutMe() {
             A dedicated Front-end Developer <br />
             based in San Salvador, El Salvador. 📍
           </h3>
-          <p>
-            I&apos;m a Junior Front-End Developer skilled in HTML5, CSS3, and
-            JavaScript, with experience in React JS and popular CSS frameworks
-            and preprocessors. Proficient in Git and prototyping with Figma. I
-            build responsive web pages using a Mobile First approach and have a
-            basic understanding of UX/UI design.
+          <p className={styles.description}>
+            Experienced Front-End Developer with 3+ years of expertise in web
+            development. Skilled in HTML5, CSS3, JavaScript, React JS, and
+            popular CSS frameworks and preprocessors. Familiarized with CMS
+            platforms (WordPress, Webflow). Proficient in Git, Figma
+            prototyping, and the Mobile First approach. Worked with DBs (SQL
+            Server, Firebase) and OS (Windows, WSL, Linux). Possesses a basic
+            understanding of UX/UI principles.
           </p>
         </div>
       </div>
