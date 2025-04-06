@@ -9,5 +9,5 @@ export default defineConfig({
     jsxInject: `import { createElement as _jsx, Fragment as _jsxFragment } from 'react'`,
   },
   plugins: [react(), jsconfigPaths()],
-  base: '/ESteban-07.github.io/',
+  base: '/',
 });
