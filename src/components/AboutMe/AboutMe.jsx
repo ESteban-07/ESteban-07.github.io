@@ -22,7 +22,7 @@ function AboutMe() {
             Experienced Front-End Developer with 3+ years of expertise in web
             development. Skilled in HTML5, CSS3, JavaScript, React JS, and
             popular CSS frameworks and preprocessors. Familiarized with CMS
-            platforms (WordPress, Webflow). Proficient in Git, Figma
+            platforms (Wix, Wordpress). Proficient in Git, Figma
             prototyping, and the Mobile First approach. Worked with DBs (SQL
             Server, Firebase) and OS (Windows, WSL, Linux). Possesses a basic
             understanding of UX/UI principles.
