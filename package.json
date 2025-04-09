@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://wlobostudio.com",
+  "homepage": "https://esteban-portillo.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
