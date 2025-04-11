@@ -88,7 +88,7 @@ function Navbar() {
 
   return (
     <nav className={styles.fixedNav}>
-      <h3 className={styles.logo}>Esteban.dev</h3>
+      <h3 className={styles.logo}>Esteban-Portillo</h3>
       <ul className={styles.linksContainer} ref={linksRef}>
         <li className={styles.closeMenuContainer}>
           <CloseMenuIcon
